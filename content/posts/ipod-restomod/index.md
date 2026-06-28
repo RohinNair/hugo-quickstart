@@ -6,6 +6,11 @@ toc: false
 cover: "iPod.jpg"
 ---
 
+
+My love of music began to fade 7 years ago.
+
+<!--more-->
+
 ![Restored iPod](iPod.jpg)
 
-Like many of us have felt as of late, I was growing tired of the services we've come to rely on. In one such case, I felt a correlation between my love of music fading after first joining Spotify 7 years ago.
+That was also when I'd become a paying subscriber of Spotify.
