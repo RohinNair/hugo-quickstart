@@ -1,6 +1,6 @@
 ---
 title: "Initialize Blog Architecture"
-date: 2026-06-29
+date: 2026-06-28
 draft: false
 toc: false
 ---
