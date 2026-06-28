@@ -1,0 +1,13 @@
+baseURL: 'https://blog.rohinnair.com'
+languageCode: 'en-us'
+title: 'Rohinnair | Technical Blog'
+theme: 'terminal'
+
+params:
+  # Terminal theme options: orange, blue, pink, green, red
+  themeColor: 'red'
+  
+  # Optional: Adds a clean terminal prompt text in the header
+  logo:
+    logoText: 'rohin@analyst:~$'
+    logoHomeLink: '/'
