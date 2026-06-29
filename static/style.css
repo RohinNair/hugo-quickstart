@@ -3,3 +3,10 @@
   --foreground: #eceae5;
   --accent: #ff7086;
 }
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 900px !important; /* The golden width for readable text & vertical media */
+        width: 100% !important;
+    }
+}
