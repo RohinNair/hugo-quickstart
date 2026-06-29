@@ -9,6 +9,7 @@ params:
   customCSS: ['style.css']
   fullWidthTheme: false
   centerTheme: true
+  readMore: "Read More"
   
   # Optional: Adds a clean terminal prompt text in the header
   logo:
