@@ -4,12 +4,29 @@
   --accent: #ff7086;
 }
 
-.post .post-cover img, 
-.post-cover img, 
-img.post-cover, 
-.post-cover-image {
-    max-height: 380px !important;
+/* ==========================================================================
+   1. HOME FEED / POST LIST VIEW
+   Keep it tightly letterboxed so it doesn't take up the whole screen.
+   ========================================================================== */
+.posts-list .post-cover img,
+.posts-list img.post-cover {
+    max-height: 280px !important; /* Slightly tighter crop for list view */
     width: 100% !important;
     object-fit: cover !important;
     object-position: center !important;
+}
+
+/* ==========================================================================
+   2. SINGLE POST VIEW (INSIDE THE ARTICLE)
+   Show the FULL image without cropping, but shrink its total footprint.
+   ========================================================================== */
+.post .post-cover img,
+.post img.post-cover {
+    max-height: 55vh !important;   /* Restricts height to 55% of the screen height max */
+    max-width: 85% !important;     /* Shrinks the width slightly so it doesn't touch the borders */
+    width: auto !important;         /* Allows width to scale proportionally to height */
+    margin: 0 auto !important;      /* Centers the image perfectly */
+    display: block !important;
+    object-fit: contain !important; /* CRITICAL: Prevents cropping, forces full aspect ratio */
+    border: 2px solid var(--theme-color); /* Optional: matches your theme pink/red borders */
 }
