@@ -4,10 +4,12 @@
   --accent: #ff7086;
 }
 
-/* Restrict the cover image from blowing up on widescreen displays */
+.post .post-cover img, 
+.post-cover img, 
+img.post-cover, 
 .post-cover-image {
-    max-height: 400px; /* Caps the vertical size so it stays clean */
-    width: 100%;
-    object-fit: cover; /* Crops gracefully if needed, rather than stretching */
-    object-position: center; /* Keeps the focus on the center of your photo */
+    max-height: 380px !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
 }
