@@ -18,15 +18,18 @@
 
 /* ==========================================================================
    2. SINGLE POST VIEW (INSIDE THE ARTICLE)
-   Show the FULL image without cropping, but shrink its total footprint.
+   Preserve the vertical aspect ratio cleanly with the signature frame.
    ========================================================================== */
 .post .post-cover img,
 .post img.post-cover {
-    max-height: 55vh !important;   /* Restricts height to 55% of the screen height max */
-    max-width: 85% !important;     /* Shrinks the width slightly so it doesn't touch the borders */
-    width: auto !important;         /* Allows width to scale proportionally to height */
-    margin: 0 auto !important;      /* Centers the image perfectly */
+    max-height: 65vh !important;   /* Give the portrait photo more vertical presence */
+    width: auto !important;         /* Maintain pristine aspect ratio */
+    max-width: 100% !important;    /* Prevent it from ever overflowing on mobile */
+    margin: 0 auto !important;      /* Keep it centered */
     display: block !important;
-    object-fit: contain !important; /* CRITICAL: Prevents cropping, forces full aspect ratio */
-    border: 2px solid var(--theme-color); /* Optional: matches your theme pink/red borders */
+    object-fit: contain !important;
+
+    /* Re-inject the signature thick terminal border matching your theme header */
+    border: 4px solid var(--theme-color) !important; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
