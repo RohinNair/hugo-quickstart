@@ -1,6 +1,6 @@
 ---
 title: "Testing new bash publish script"
-date: 2026-10-25
+date: 2026-10-23
 draft: false
 toc: false
 ---
